@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Sembunyikan Gambar</title>
+        <script src="jquery-3.6.3.js"></script>
+        <!--script untuk memberi fungsi pada button-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".sembunyi").click(function() {$("#foto").hide("slow") });
+                $(".tampil").click(function() {$("#foto").show("slow") });
+                $(".sembunyi2").click(function() {$("#foto2").hide("slow") });
+                $(".tampil2").click(function() {$("#foto2").show("slow") });
+            });
+        </script>
+    </head>
+    <body>
+        <!--tampilan untuk button sembunyi dan tampilkan serta foto pertama-->
+        <div>
+            <button class="sembunyi">sembunyikan</button>
+            <button class="tampil">tampilkan</button>
+            <p><img id="foto" src="assets/logo upn.png" style="height: 5cm; width: 5cm;"></p>
+        </div>
+        <!--tampilan untuk button sembunyi dan tampilkan serta foto kedua-->
+        <div>
+            <button class="sembunyi2">sembunyikan</button>
+            <button class="tampil2">tampilkan</button>
+            <p><img id="foto2" src="assets/orca.jpg" style="height: 5cm; width: 5cm;"></p>
+        </div>
+    </body>
+</html>

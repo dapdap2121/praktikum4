@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Efek Fade</title>
+        <script src="jquery-3.6.3.js"></script>
+        <!--script untuk memberi effect fade in, fade out, dan fade to-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".fadein").click(function() {
+                    $("#kotak").fadeIn("slow");
+                });
+                $(".fadeout").click(function() {
+                    $("#kotak").fadeOut("slow");
+                });
+                $(".fadeto").click(function() {
+                    $("#kotak").fadeTo("slow", 0.3);
+                });
+            })
+        </script>
+        <!--style untuk memberi ukuran serta warna pada objek kotak-->
+        <style type="text/css">
+            #kotak{
+                width: 180px;
+                height: 100px;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!--menampilkan objek kotak pada halaman web-->
+        <div id="kotak"></div>
+        <br>
+        <!--tampilan button fade in, fade out, dan fade to-->
+        <div>
+            <button class="fadein">fade in</button>
+            <button class="fadeout">fade out</button>
+            <button class="fadeto">fade to</button>
+        </div>
+    </body>
+</html>

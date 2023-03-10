@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Ubah Warna</title>
+        <script src="jquery-3.6.3.js"></script>
+        <!--script untuk menggunakan event double click-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#kotak1").dblclick(function() {
+                    $("#kotak1").css("background-color", "red");
+                })
+                $("#kotak2").dblclick(function() {
+                    $("#kotak2").css("background-color", "blue");
+                })
+            
+                $("#kotak3").dblclick(function() {
+                    $("#kotak3").css("background-color", "red");
+                })
+            
+                $("#kotak4").dblclick(function() {
+                    $("#kotak4").css("background-color", "blue");
+                })
+            });
+        </script>
+        <!--style ukuran serta warna pada objek kotak-->
+        <style type="text/css">
+            #kotak1,
+            #kotak2,
+            #kotak3,
+            #kotak4{
+                width : 70px;
+                height : 70px;
+                background: yellow;
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <!--menampilkan objek kotak pada halaman web-->
+    <body>
+        <h2>Klik 2 kali pada kotak untuk mengubah warna</h2>
+        <div style="display: flex;">
+            <div id="kotak1"></div>
+            <div id="kotak2"></div>
+            <div id="kotak3"></div>
+            <div id="kotak4"></div>
+        </div>
+    </body>
+</html>
